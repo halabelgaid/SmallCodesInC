@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Purpose: to print stars in a given format 
+
+int main() {
+
+  // Variable declaration:
+    int num, i, j;
+  
+  // Read data from user:
+    printf("Enter number of rows to be printed: ");
+    scanf("%d", &num);
+  
+  // Algorithim:
+   for(i = 1; i<=num; i++)
+   {
+     for(j= 1; j<=i; j++){
+       printf(" * ");
+       }
+      printf("\n"); 
+    }
+    
+   
+}
