@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+// Purpose: to print stars in a pyramid format 
+
+int main() {
+
+  // Variable Declaration:
+  int num, i, j;
+
+  // Read data from user:
+  printf("Enter the number of rows: ");
+  scanf("%d", &num);
+  
+  // Algorithim:
+  
+  for(i = 1; i <= num; i++){  // this is for rows
+    
+    for(j = 1; j<= (2*num)-1; j++){   // this is for columns 
+      
+      if(j>= num-(i-1) && j<= num+(i-1)){  // this is for where to print stars for certain shape
+        printf("*");
+      }
+      else{
+        printf(" ");
+      }   
+    }
+    printf("\n");
+  }
+  
+}
